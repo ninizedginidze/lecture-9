@@ -1,0 +1,470 @@
+@font-face {
+    font-family:'Helvetica Neue light';
+    src: url(../fonts/HelveticaNeueLight.ttf);
+}
+@font-face {
+    font-family: 'Helvetica Neue regular';
+    src: url(../fonts/HelveticaNeue-Roman.otf);
+}
+
+@font-face {
+    font-family:'Helvetica Neue medium';
+    src: url(../fonts/HelveticaNeueMedium.ttf);
+}
+@font-face {
+    font-family: 'Helvetica Neue bold';
+    src: url(../fonts/HelveticaNeueBold.ttf);
+}
+@font-face {
+    font-family: 'Helvetica Neue italic';
+    src: url(../fonts/HelveticaNeueItalic.ttf);
+}
+body {
+    background-color: #FFFFFF;
+}
+nav {
+    width: 100%;
+    margin: 0 auto;
+    padding: 55px 70px 42px 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+nav ul {
+    display: flex;
+}
+.nav-pages {
+    gap: 40px;
+    margin-left: 355px;
+    margin-right: 108px;
+}
+.icons {
+    gap: 35px;
+}
+.icons li:nth-child(1){
+    cursor: pointer;
+}
+.nav-pages a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.98px;
+    font-family: 'Helvetica Neue medium';
+    color: black;
+}
+.company-concept {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    
+    max-height: 604px;
+}
+.plant-image {
+    position: relative;
+    left: 139px;
+    bottom: 115px;
+} 
+.company-slogan {
+    max-width: 472px;
+    margin-top: 20px;
+}   
+.company-slogan h1{
+    text-transform: uppercase;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 53.72px;
+    font-family: 'Helvetica Neue bold';
+    color: black;
+}
+.company-slogan p {
+    width: 418px;
+    height: 111px;
+    margin: 13px 0 36px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    font-family:'Helvetica Neue regular';
+    color: black;
+}
+.more-option {
+    width: 417px;
+    display: flex;
+    justify-content: space-between;
+}
+.more-option button {
+    width: 196px;
+    background-color:#01601B;
+    border-radius: 10px;
+    font-size: 18px;
+    line-height: 21.98px;
+    font-weight:500;
+    font-family:'Helvetica Neue medium';
+    color: #FFFFFF;
+    padding: 15px 52px;
+    cursor: pointer;
+}
+.social-media {
+    margin-top: 243px;
+    margin-right: 111px;
+}
+.line {
+    top: 389px;
+    right: 112px;
+    position: absolute;
+    border-right: 1px solid black;
+    height: 173px;
+}
+.social-media ul li:nth-child(2) {
+    margin-top: 17px;
+    margin-bottom: 15.39px;
+}
+/*homepagesection*/
+.product-section {
+    margin: 127px 0px 195px 0px;
+}
+h2 {text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 43.96px;
+    font-family:'Helvetica Neue medium';
+    color: black;
+    margin-left: 68px;
+    margin-bottom: 20px;
+}
+.offered-products {
+    margin:0px 68px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 99.95px;
+    row-gap: 60px;
+}
+.product-box {
+    position: relative;
+    width: 368.05px;
+    height: 317px;
+    margin: 0 auto;
+}
+.product-box img {
+    border-radius: 10px 10px 0px 0px;
+}
+.product-box:hover img {
+    opacity: 0.5;
+    transition: 1s;
+}
+.product-box button {
+    position: absolute;
+    left: 25%;
+    bottom: 20%;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 23.2px;
+    font-family: 'Helvetica Neue medium';
+    color: #0F6845;
+    padding:15px 40px;
+    cursor: pointer;
+    opacity: 0;
+}
+.product-box:hover button {
+    opacity: 1;
+    transition: 1s;
+}
+.product-type-price {
+    position: absolute;
+    bottom: 0.01%;
+    width: 368.05px;
+    height: 37.23px;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(54, 121, 79, 0.55);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 8px 14px; 
+}
+.name {
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 23.2px;
+    font-family: 'Helvetica Neue medium';
+    color: #FFFFFF;
+}
+.price {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.56px;
+    font-family:'Helvetica Neue italic';
+    color: #FFFFFF;
+}
+.product-box:hover .product-type-price {
+    background-color: #36794F;
+    transition-timing-function:ease-in-out;
+}
+.more-product {
+    grid-column: 3;
+    text-align: right;
+    margin: 27.97px 24px 115px 0px;
+}
+.more-product a,
+.more-info a {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.98px;
+    font-family:'Helvetica Neue medium';
+    color: #01601B;
+}
+.plants-care {
+    margin: 0px 68px;
+}
+.care-rules {
+    display: flex;
+    justify-content: space-between;
+}
+.guide {
+    width: 638px;
+    height: 567.61px;
+    box-shadow: 0px 2px 13px 1px rgba(209, 209, 209, 0.31);
+    border-radius: 10px;
+}
+.guide img {
+    border-radius: 10px 10px 0px 0px;
+}
+.guide h4 {
+    margin: 15px 0px 32px 10px;
+}
+.guide a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.3px;
+    font-family:'Helvetica Neue medium';
+    color: black;
+}
+.guide p {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 20px;
+    font-family:'Helvetica Neue light';
+    color: black;
+    letter-spacing: 4%;
+}
+.more-info {
+    text-align: right;
+    margin-top: 28px;
+    margin-bottom: 151px;
+}
+.plants-accessories {
+    position: relative;
+}
+.accessories {
+    display: flex;
+    justify-content: flex-start;
+    gap: 86px;
+}
+.accessories img {
+    border-radius: 0px 0px 200px 0px;
+}
+.necessary-accessories {
+    position: absolute;
+    bottom: 154px;
+    right: 68px;
+    width: 744px;
+    height: 389px;
+    border-radius: 16px;
+    padding: 94px 125px 0px 108px;
+    background-color: #ECF1EE;
+    box-shadow: 10px 23px 29px 14px rgba(215, 242, 225, 0.2);
+}
+.necessary-accessories p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.86px;
+    font-family: 'Helvetica Neue regular';
+    color: black;
+}
+.necessary-accessories .first {
+    margin-bottom: 20px;
+}
+/*footer*/
+footer {
+    background-color: #255338;
+}
+.footer-themes {
+    padding: 37px 44px 34.47px 71px;
+    display: flex;
+    justify-content: space-between;
+}
+.slogan-socials p {
+    margin-top: 86px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.98px;
+    font-family:'Helvetica Neue medium';
+    color: #FFFFFF;
+}
+footer form input {
+    background-color: #255338;
+    border-radius: 10px;
+    padding: 15px 123px 13px 15px;
+    border: 1px solid #FFFFFF;
+}
+footer form {
+    position: relative;
+    margin: 21px 0px 50px 0px;
+}
+footer form button {
+    position: absolute;
+    left:274px;
+    top:50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+::placeholder {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.98px;
+    font-family: 'Helvetica Neue medium';
+    color: #FFFFFF;
+}
+.fb {
+    margin: 0px 25px;
+}
+.company-info {
+    display: flex;
+    gap: 130px;
+}
+.company-info h4 {
+    margin-bottom: 17px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.98px;
+    font-family:'Helvetica Neue bold';
+    color: #FFFFFF;
+}
+.company-info a,
+.company-privacy a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.47px;
+    font-family:'Helvetica Neue regular';
+    color: #FFFFFF;
+}
+.company-info li {
+    margin-bottom:6px;
+}
+.company-privacy {
+    border-top: 1px solid white;
+    padding: 23px 61px 21px 0px;
+}
+.company-privacy ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+ /*contact*/
+ .contact-info {
+    margin-top: 194px;
+    position: relative;
+ }
+ .home-plants {
+    width: 100%;
+ }
+ .contact-channel {
+    position: absolute;
+    padding: 28px 32px 60px 112px;
+    background-color:rgba(1, 96, 27, 0.5);
+    top:22px;
+    left:19px;
+    right: 19px;
+    bottom: 21px;
+ }
+ .contact-channel h1 {
+    text-align: center;
+    margin-bottom: 110.67px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36.63px;
+    font-family:'Helvetica Neue bold';
+    color: #FFFFFF;
+ }
+ .company-contact-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 225px;
+ }
+ .middle {
+    margin-left: 353px;
+    margin-right: 244px;
+}
+ .icons-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 47px;
+ }
+ .icons-info h5 {
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 31.75px;
+    font-family:'Helvetica Neue medium';
+    color: #FFFFFF;
+ }
+ .form-wrapper input {
+    border-radius: 12px;
+    padding: 10px 60px;
+}
+.form-wrapper textarea {
+    border-radius: 12px;
+    padding: 61px 20px;
+}
+.form-wrapper div {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+}
+ .form-wrapper {
+    margin: 0px 347px 60px 348px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 119px;
+    row-gap: 52px;
+}
+.form-wrapper .textarea {
+    margin-top: 90px;
+    grid-column: 1/3;
+    resize: none;
+}
+label {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.54px;
+    font-family:'Helvetica Neue medium';
+    color: #FFFFFF;
+}
+.location {
+    margin: 69px 198px 97.14px 199px;
+}
+.location h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36.63px;
+    font-family:'Helvetica Neue bold';
+    color: #000000;
+}
+.map {
+    margin: 55px;
+    border: 1px solid #01601B;
+    padding: 63.93px 82.32px 63.93px 83.19px;
+}
+iframe {
+    max-width: 877.49px;
+    width: 100%;
+}
